@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./logo.png">
+</head>
+
+<body>
+    <h1>Calculadora Fitness</h1>
+
+    <div class="formulario">
+        <form id="form-calculadora">
+            <div class="input-group">
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
+                <input type="number" id="peso" name="peso" placeholder="Digite seu peso (kg)" required>
+                <input type="number" id="altura" name="altura" placeholder="Digite sua altura (cm)" required>
+
+                <label for="sexo">Gênero:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+
+                <label for="nivel">Nível de atividade:</label>
+                <select id="nivel" name="nivel" required>
+                    <option value="1.2">Sedentário</option>
+                    <option value="1.375">Leve</option>
+                    <option value="1.55">Moderado</option>
+                    <option value="1.725">Ativo</option>
+                    <option value="1.9">Muito ativo</option>
+                </select>
+
+                <button type="button" id="calcular">Calcular</button>
+            </div>
+        </form>
+
+        <!-- Resultados -->
+        <p id="resultado"></p>
+        <p id="resultadoAgua"></p>
+        <p id="lembrete"> Lembrando que esses valores podem variar de acordo com o clima, nível de atividade física e
+            outros fatores.
+            Eles também não substituem a orientação de um profissional de saúde.</p>
+    </div>
+
+    <script src="teste.js"></script>
+</body>
+
+</html>
